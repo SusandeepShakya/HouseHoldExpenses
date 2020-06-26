@@ -1,19 +1,32 @@
-public class HouseHoldExpenses {
-    private String Name;
-    private int Rent, PreviousElectricityUnit, NewElecricityUnit, PreviousWaterUnit, NewWaterUnit, Eres, Wres, Waste;
+import java.sql.Date;
+import java.time.LocalDateTime;
 
-    public HouseHoldExpenses(String Name, int Rent, int PreviousElectricityUnit, int NewElectricityUnit, int PreviousWaterUnit, int NewWaterUnit, int Eres, int Wres, int Waste) {
+public class HouseHoldExpenses {
+    public String Name;
+    public int Rent, PreviousElectricityUnit, NewElectricityUnit, PreviousWaterUnit, NewWaterUnit, Eres, Wres, Waste;
+    public String IssuedDate;
+
+    public HouseHoldExpenses() {
 
         this.Name = Name;
         this.Rent = Rent;
         this.PreviousElectricityUnit = PreviousElectricityUnit;
-        this.NewElecricityUnit = NewElectricityUnit;
+        this.NewElectricityUnit = NewElectricityUnit;
         this.PreviousWaterUnit = PreviousWaterUnit;
         this.NewWaterUnit = NewWaterUnit;
         this.Eres = Eres;
         this.Wres = Wres;
         this.Waste = Waste;
     }
+
+    public String getIssuedDate() {
+        return IssuedDate;
+    }
+
+    public void setIssuedDate(String issuedDate) {
+        IssuedDate = issuedDate;
+    }
+
 
     public String getName() {
         return Name;
@@ -40,11 +53,11 @@ public class HouseHoldExpenses {
     }
 
     public int getNewElecricityUnit() {
-        return NewElecricityUnit;
+        return NewElectricityUnit;
     }
 
     public void setNewElecricityUnit(int newElecricityUnit) {
-        NewElecricityUnit = newElecricityUnit;
+        NewElectricityUnit = newElecricityUnit;
     }
 
     public int getPreviousWaterUnit() {

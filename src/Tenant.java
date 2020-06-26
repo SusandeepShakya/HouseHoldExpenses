@@ -1,18 +1,26 @@
 public class Tenant {
-    private int ID;
-    private int TenantName;
 
-    public Tenant() {
-        this.TenantName = TenantName;
+    private String TenantName;
+    private int ID;
+
+    public Tenant(){};
+
+    public Tenant(int id, String tenantName){
     }
+
+
 
     public int getID() {
         return ID;
     }
-    public int getTenantName() {
+    public void setID(int id) {
+        ID = id;
+    }
+
+    public String getTenantName() {
         return TenantName;
     }
-    public void setTenantName(int tenantName) {
+    public void setTenantName(String tenantName) {
         TenantName = tenantName;
     }
 }
